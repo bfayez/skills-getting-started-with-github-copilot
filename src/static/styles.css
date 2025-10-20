@@ -90,19 +90,53 @@ section h3 {
   margin: 0;
   max-height: 120px;
   overflow-y: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
 }
 
-.participants-list li {
+.participant-item {
   background-color: #e3f2fd;
   color: #1565c0;
   padding: 4px 8px;
-  margin: 3px 0;
   border-radius: 12px;
   font-size: 14px;
   font-weight: 500;
-  display: inline-block;
-  margin-right: 6px;
   border: 1px solid #bbdefb;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.participant-name {
+  line-height: 1;
+}
+
+.delete-participant-btn {
+  background: none;
+  border: none;
+  color: #d32f2f;
+  cursor: pointer;
+  padding: 2px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  width: 18px;
+  height: 18px;
+  transition: all 0.2s ease;
+}
+
+.delete-participant-btn:hover {
+  background-color: #ffebee;
+  color: #b71c1c;
+  transform: scale(1.1);
+}
+
+.delete-participant-btn svg {
+  width: 10px;
+  height: 10px;
 }
 
 .no-participants {
